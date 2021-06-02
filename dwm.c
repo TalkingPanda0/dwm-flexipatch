@@ -109,7 +109,7 @@
 #else
 #define TAGMASK                 ((1 << NUMTAGS) - 1)
 #endif // SCRATCHPADS_PATCH
-#define TEXTWM(X)               (drw_fontset_getwidth(drw, (X), True) + lrpad)
+#define TEXTWM(X)               (drw_fontset_getwidth(drw, (X), True) + 8)
 #define TEXTW(X)                (drw_fontset_getwidth(drw, (X), False) + lrpad)
 #define HIDDEN(C)               ((getstate(C->win) == IconicState))
 
